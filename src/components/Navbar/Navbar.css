@@ -1,0 +1,33 @@
+.profile__header {
+  width: 100%;
+  height: 10.8vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 4vh 2vw;
+  border-bottom: 1px solid black;
+}
+
+.profile__location {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.profile__name {
+  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Canterbury";
+}
+
+.profile__menu {
+  position: absolute;
+  right: 2vw;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.profile__menu p {
+  margin: 0;
+}

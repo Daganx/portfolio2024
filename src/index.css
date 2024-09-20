@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "EditorialNew";
+  src: url("./assets/fonts/Editorial_New/PPEditorialNew-Ultralight-BF644b21500d0c0.otf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "EditorialNew";
+  src: url("./assets/fonts/Editorial_New/PPEditorialNew-UltralightItalic-BF644b214ff1e9b.otf");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "EditorialNew";
+  src: url("./assets/fonts/Editorial_New/PPEditorialNew-Italic-BF644b214fb0c0a.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "EditorialNew";
+  src: url("./assets/fonts/Editorial_New/PPEditorialNew-Regular-BF644b214ff145f.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "EditorialNew";
+  src: url("./assets/fonts/Editorial_New/PPEditorialNew-Ultrabold-BF644b21500840c.otf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "EditorialNew";
+  src: url("./assets/fonts/Editorial_New/PPEditorialNew-UltraboldItalic-BF644b214faef01.otf");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Canterbury";
+  src: url("./assets/fonts/Canterbury/Canterbury.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  list-style: none;
+  font-family: "EditorialNew";
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}

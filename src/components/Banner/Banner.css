@@ -1,0 +1,17 @@
+.profile__banner {
+  background-color: #000;
+  width: 100%;
+  height: 420px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.profile__banner h1 {
+  font-size: 20vw;
+  color: #c7c6c3;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  padding-top: 2rem;
+}
