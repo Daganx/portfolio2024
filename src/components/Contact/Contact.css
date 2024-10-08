@@ -1,0 +1,34 @@
+.contact {
+  background-color: black;
+  padding: 75px;
+  width: 100vw;
+}
+
+.contact p:first-child {
+  font-size: 2vw;
+  letter-spacing: -2px;
+  color: white;
+}
+
+.contact__together {
+  color: #ba3d12;
+  filter: brightness(1.3);
+}
+
+.contact__talk {
+  font-size: 10vw;
+  letter-spacing: -2px;
+  color: white;
+}
+
+.contact__button ul {
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+}
+
+.contact__button li {
+  font-size: 1.5vw;
+  letter-spacing: -2px;
+  color: white;
+}

@@ -1,33 +1,43 @@
-.profile__header {
+.navbar__header {
   width: 100%;
   height: 10.8vh;
   display: flex;
   align-items: center;
-  position: relative;
   padding: 4vh 2vw;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: url("../../assets/images/background2.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 99;
 }
 
-.profile__location {
+.navbar__location {
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 400;
+  color: black;
 }
 
-.profile__name {
-  font-size: 2rem;
+.navbar__name {
+  font-size: 3vw;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Canterbury";
+  color: black;
 }
 
-.profile__menu {
+.navbar__menu {
   position: absolute;
   right: 2vw;
   font-size: 2rem;
   cursor: pointer;
 }
 
-.profile__menu p {
+.navbar__menu p {
   margin: 0;
+  color: black;
 }
