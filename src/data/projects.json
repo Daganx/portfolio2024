@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "PROJECT",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "technologies": ["REACT", "REDUX", "GIT"],
+    "image": "project1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "PROJECT",
+    "description": "Ab alias debitis sed sunt? Ea beatae voluptatum in suscipit nulla.",
+    "technologies": ["NODE.JS", "EXPRESS", "MONGODB"],
+    "image": "project2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "PROJECT",
+    "description": "Tenetur inventore! Ea beatae voluptatum in suscipit nulla.",
+    "technologies": ["JAVASCRIPT", "TYPESCRIPT", "DOCKER"],
+    "image": "project3.jpg"
+  }
+]

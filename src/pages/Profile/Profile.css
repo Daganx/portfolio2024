@@ -1,0 +1,7 @@
+.profile {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid black;
+}

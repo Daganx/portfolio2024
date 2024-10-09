@@ -1,6 +1,9 @@
 .personal {
   padding: 48px;
   position: relative;
+  background: url("../../assets/images/greylight.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .personal__text {
@@ -22,9 +25,8 @@
   font-size: 8rem;
   font-family: "Canopee";
   margin-right: 10px;
-  color: black;
   padding: 6px;
-  background-color: #ba3d12;
+  background-color: #ea4916;
   filter: brightness(1.3);
   color: white;
   display: flex;

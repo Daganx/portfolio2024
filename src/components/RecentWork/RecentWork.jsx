@@ -1,10 +1,12 @@
 import "./RecentWork.css";
+import Project1 from "../../assets/images/project1.jpg";
+import Project2 from "../../assets/images/project3.jpg";
 
 export default function RecentWork() {
   return (
     <section className="recent__works">
       <article className="work__item">
-        <img src="" alt="Projet 1" className="work__image" />
+        <img src={Project1} alt="Projet 1" className="work__image" />
         <p className="work__title">
           Project#1<span className="new-label">NEW</span>
         </p>
@@ -20,7 +22,7 @@ export default function RecentWork() {
         </p>
       </article>
       <article className="work__item">
-        <img src="" alt="Projet 2" className="work__image" />
+        <img src={Project2} alt="Projet 2" className="work__image" />
         <p className="work__title">
           Project#2<span className="new-label">NEW</span>
         </p>

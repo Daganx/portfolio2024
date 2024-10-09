@@ -1,79 +1,110 @@
-import React, { useState } from "react";
-import "./Project.css";
+import React, { useState, useRef, useEffect } from "react";
+import projectsData from "../../data/projects.json";
 import ProjectImage1 from "../../assets/images/project1.jpg";
 import ProjectImage2 from "../../assets/images/project1.jpg";
-import ProjectImage3 from "../../assets/images/project1.jpg";
+import ProjectImage3 from "../../assets/images/project3.jpg";
+import "./Project.css";
+
+// Mapper les images aux projets
+const projectImages = {
+  "project1.jpg": ProjectImage1,
+  "project2.jpg": ProjectImage2,
+  "project3.jpg": ProjectImage3,
+};
+
+// Fonction pour ajouter les images aux projets depuis le fichier JSON
+const enrichProjectsWithImages = (projects) => {
+  return projects.map((project) => ({
+    ...project,
+    image: projectImages[project.image],
+  }));
+};
+
+// Fonction de rendu pour les technologies d'un projet
+const renderTechnologies = (technologies) => {
+  return technologies.map((tech, index) => (
+    <li key={index}>
+      {index + 1}. {tech}
+    </li>
+  ));
+};
 
 export default function Project() {
-  // Liste des projets
-  const projects = [
-    {
-      id: 1,
-      title: "PROJECT_",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      technologies: ["REACT", "REDUX", "GIT"],
-      image: ProjectImage1,
-    },
-    {
-      id: 2,
-      title: "PROJECT_",
-      description:
-        "Ab alias debitis sed sunt? Ea beatae voluptatum in suscipit nulla.",
-      technologies: ["NODE.JS", "EXPRESS", "MONGODB"],
-      image: ProjectImage2,
-    },
-    {
-      id: 3,
-      title: "PROJECT_",
-      description: "Tenetur inventore! Ea beatae voluptatum in suscipit nulla.",
-      technologies: ["JAVASCRIPT", "TYPESCRIPT", "DOCKER"],
-      image: ProjectImage3,
-    },
-  ];
+  // Charger et enrichir les projets avec les images
+  const projects = enrichProjectsWithImages(projectsData);
 
-  // État pour suivre l'index du projet courant
+  // État pour suivre l'index du projet courant et gérer la visibilité du contenu
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+  const [fadeOut, setFadeOut] = useState(false);
+  const projectImageRef = useRef(null);
+
+  // Effet pour gérer la transition avec un fondu
+  useEffect(() => {
+    if (fadeOut) {
+      const timer = setTimeout(() => {
+        setFadeOut(false);
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [fadeOut]);
 
   // Fonction pour passer au projet suivant
-  const handleNextProject = () => {
-    setCurrentProjectIndex((prevIndex) =>
-      prevIndex === projects.length - 1 ? 0 : prevIndex + 1
-    );
+  const goToNextProject = () => {
+    setFadeOut(true);
+    setTimeout(() => {
+      setCurrentProjectIndex((prevIndex) =>
+        prevIndex === projects.length - 1 ? 0 : prevIndex + 1
+      );
+      scrollToProjectImage();
+    }, 100);
   };
 
-  // Informations du projet actuel
+  const scrollToProjectImage = () => {
+    setTimeout(() => {
+      if (projectImageRef.current) {
+        projectImageRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 300);
+  };
+
+  // Récupérer les informations du projet courant
   const { title, description, technologies, image } =
     projects[currentProjectIndex];
 
   return (
-    <>
-      <section className="project">
-        <div className="project__info">
-          <h2>
-            {title}{" "}
-            <span className="project__number">#{currentProjectIndex + 1}</span>
-          </h2>
-          <img src={image} alt={title} className="project__info-image" />
+    <section className="projects" id="projects">
+      <article className="project__info">
+        <h2>
+          {title}{" "}
+          <span className="project__number">#{currentProjectIndex + 1}</span>
+        </h2>
+
+        <img
+          src={image}
+          alt={title}
+          className="project__info-image"
+          ref={projectImageRef}
+        />
+
+        <div className={`project__content ${fadeOut ? "fade-out" : "fade-in"}`}>
           <h3>
             DESC {title}{" "}
             <span className="project__number">#{currentProjectIndex + 1}</span>
           </h3>
           <p>Short Desc :</p>
+
           <div className="project__info-description">
             <p className="project__info-text">{description}</p>
+
             <ul className="project__info-techno">
-              {technologies.map((tech, index) => (
-                <li key={index}>
-                  {index + 1}. {tech}
-                </li>
-              ))}
-              <p onClick={handleNextProject} className="next-project">
+              {renderTechnologies(technologies)}
+              <p onClick={goToNextProject} className="next-project">
                 Next Project! -
               </p>
             </ul>
           </div>
         </div>
-      </section>
-    </>
+      </article>
+    </section>
   );
 }

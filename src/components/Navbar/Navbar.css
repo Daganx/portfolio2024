@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  background: url("../../assets/images/background2.jpg");
+  background: url("../../assets/images/greylight.jpg");
   background-position: center;
   background-size: cover;
   z-index: 99;
@@ -18,16 +18,14 @@
 .navbar__location {
   font-size: 1rem;
   font-weight: 400;
-  color: black;
 }
 
 .navbar__name {
   font-size: 3vw;
+  font-family: "Canterbury";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Canterbury";
-  color: black;
 }
 
 .navbar__menu {
@@ -39,5 +37,20 @@
 
 .navbar__menu p {
   margin: 0;
-  color: black;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar__menu path {
+  transition: color 0.3s ease;
+}
+.navbar__menu path:hover {
+  color: #EA4916;
+  filter: brightness(1.3);
 }

@@ -18,7 +18,11 @@
 .loader__title {
   font-size: 6vw;
   letter-spacing: -2px;
-  color: black;
+}
+
+.loader__name {
+  font-size: 6vw;
+  letter-spacing: -2px;
 }
 
 .loader__content {
@@ -55,10 +59,4 @@
 
 .loader__subtitle::after {
   right: -35%;
-}
-
-.loader__name {
-  font-size: 6vw;
-  color: black;
-  letter-spacing: -2px;
 }
