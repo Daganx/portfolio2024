@@ -4,20 +4,21 @@
   display: flex;
   align-items: center;
   padding: 4vh 2vw;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 2px solid rgb(5, 5, 5);
+  border-top: 2px solid rgb(5, 5, 5);
   position: sticky;
   top: 0;
   left: 0;
-  background: url("../../assets/images/greylight.jpg");
+  background: url("../../assets/images/background/mainBackground.jpg");
   background-position: center;
   background-size: cover;
   z-index: 99;
 }
 
 .navbar__location {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -2px;
 }
 
 .navbar__name {

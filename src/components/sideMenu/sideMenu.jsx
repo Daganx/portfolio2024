@@ -30,8 +30,25 @@ export default function SideMenu({ menuOpen, toggleMenu, scrollToSection }) {
         <FontAwesomeIcon icon={faBurger} size="1x" />
       </div>
       <ul className="side-menu__nav">
-        <li>Daganx CV</li>
-        <li>Github</li>
+        <li>
+          {/* Lien vers le CV en PDF */}
+          <a
+            href="/CV/LETOT_Dagan_1_CV_102024.pdf" // Remplace par le chemin réel vers ton PDF
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Daganx CV
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/daganx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </li>
         <li onClick={() => scrollToSection("projects")}>Projects</li>
       </ul>
     </div>

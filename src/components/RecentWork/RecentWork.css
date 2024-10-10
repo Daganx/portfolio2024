@@ -5,7 +5,7 @@
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-  background: url("../../assets/images/greylight.jpg");
+  background: url("../../assets/images/background/mainBackground.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -16,7 +16,7 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  
   min-height: 320px;
   padding-top: 36px;
 }
@@ -24,7 +24,7 @@
 .work__image {
   width: 100%;
   height: 150px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(5, 5, 5);
   object-fit: cover;
   object-position: center;
   background-color: #EA4916;
@@ -64,7 +64,7 @@
 
 .new-label {
   background-color: #EA4916;
-  color: white;
+  color: rgb(250, 250, 250);
   font-size: 0.7rem;
   padding: 2px 6px;
   margin-left: 10px;
@@ -74,12 +74,7 @@
 .center-text {
   text-align: center;
   padding: 0 40px;
-}
-
-.work__tip {
-  font-size: 0.8rem;
-  color: grey;
-  margin-top: 20px;
+  justify-content: center;
 }
 
 .recent__works::before,
@@ -89,7 +84,7 @@
   top: 10%;
   bottom: 10%;
   width: 2px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(5, 5, 5);
 }
 
 .recent__works::before {

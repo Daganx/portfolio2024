@@ -1,14 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import projectsData from "../../data/projects.json";
-import ProjectImage1 from "../../assets/images/project1.jpg";
-import ProjectImage2 from "../../assets/images/project1.jpg";
+import ProjectImage1 from "../../assets/images/artparis/artparis.webp";
+import ProjectImage2 from "../../assets/images/bikeshop/bikeshop.jpg";
 import ProjectImage3 from "../../assets/images/project3.jpg";
-import "./Project.css";
+import "./Gallery.css";
 
 // Mapper les images aux projets
 const projectImages = {
-  "project1.jpg": ProjectImage1,
-  "project2.jpg": ProjectImage2,
+  "parisArt.jpg": ProjectImage1,
+  "bikeShop.jpg": ProjectImage2,
   "project3.jpg": ProjectImage3,
 };
 
@@ -29,7 +29,7 @@ const renderTechnologies = (technologies) => {
   ));
 };
 
-export default function Project() {
+export default function Gallery() {
   // Charger et enrichir les projets avec les images
   const projects = enrichProjectsWithImages(projectsData);
 
@@ -68,7 +68,7 @@ export default function Project() {
   };
 
   // Récupérer les informations du projet courant
-  const { title, description, technologies, image } =
+  const { title, description, descriptionTechnologies, technologies, image } =
     projects[currentProjectIndex];
 
   return (
@@ -76,7 +76,6 @@ export default function Project() {
       <article className="project__info">
         <h2>
           {title}{" "}
-          <span className="project__number">#{currentProjectIndex + 1}</span>
         </h2>
 
         <img
@@ -88,18 +87,19 @@ export default function Project() {
 
         <div className={`project__content ${fadeOut ? "fade-out" : "fade-in"}`}>
           <h3>
-            DESC {title}{" "}
+            {title}{" "}
             <span className="project__number">#{currentProjectIndex + 1}</span>
           </h3>
-          <p>Short Desc :</p>
+          <p className="project__livecode">Live Code</p>
 
           <div className="project__info-description">
             <p className="project__info-text">{description}</p>
+            <p className="project__info-text">{descriptionTechnologies}</p>
 
             <ul className="project__info-techno">
               {renderTechnologies(technologies)}
               <p onClick={goToNextProject} className="next-project">
-                Next Project! -
+                Next Project! 
               </p>
             </ul>
           </div>

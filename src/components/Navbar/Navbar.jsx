@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBurger } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
-import SideMenu from "../sideMenu/sideMenu";
+import SideMenu from "../SideMenu/SideMenu";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

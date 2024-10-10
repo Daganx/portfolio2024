@@ -5,11 +5,11 @@
   justify-content: center;
   position: relative;
   padding-top: 2rem;
-  background: url("../../assets/images/greenbg.jpg");
+  background: url("../../assets/images/background/bannerBackground.jpg");
   background-position: center;
   background-size: 130%;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 2px solid rgb(5, 5, 5);
+  border-top: 2px solid rgb(5, 5, 5);
 }
 
 .profile__banner h1 {
@@ -20,8 +20,8 @@
   color: transparent;
   filter: brightness(1.3);
   font-size: 23vw;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 32px;
   margin: 0;
   padding-top: 2rem;
   position: relative;

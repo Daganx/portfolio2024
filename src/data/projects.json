@@ -1,17 +1,19 @@
 [
   {
     "id": 1,
-    "title": "PROJECT",
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    "technologies": ["REACT", "REDUX", "GIT"],
-    "image": "project1.jpg"
+    "title": "PARIS.ART",
+    "description": "PARIS.ART is an open vitrin to the best paintings of this agency established in Paris, capital of Culture.",
+    "descriptionTechnologies": "This application was build with Vite and React. A StorePage is available to see all the paintings and works. ",
+    "technologies": ["REACT", "VITE", "REDUX"],
+    "image": "parisArt.jpg"
   },
   {
     "id": 2,
-    "title": "PROJECT",
-    "description": "Ab alias debitis sed sunt? Ea beatae voluptatum in suscipit nulla.",
-    "technologies": ["NODE.JS", "EXPRESS", "MONGODB"],
-    "image": "project2.jpg"
+    "title": "BIKESHOP",
+    "description": "BikeShop is the shop you need if you are a passionate of Biking !",
+    "descriptionTechnologies": "This application was with Vite and React. Redux was use to create a state to add to cart and buy a bike. ",
+    "technologies": ["REACT", "VITE", "REDUX"],
+    "image": "bikeShop.jpg"
   },
   {
     "id": 3,

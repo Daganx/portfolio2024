@@ -1,7 +1,7 @@
-import "./Contact.css";
+import "./Footer.css";
 
 const ContactLinks = () => {
-  const links = ["Email", "LinkedIn", "Twitter", "Github"];
+  const links = ["Email", "LinkedIn", "Github"];
 
   return (
     <ul>
@@ -20,7 +20,7 @@ const ScrollToTopButton = ({ onClick }) => {
   );
 };
 
-export default function Contact() {
+export default function Footer() {
   // Fonction pour remonter en haut de la page
   const scrollToTop = () => {
     window.scrollTo({

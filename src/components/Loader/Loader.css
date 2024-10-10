@@ -1,7 +1,7 @@
 .loader {
   width: 100vw;
   height: 100vh;
-  background: url("../../assets/images/greenbg.jpg");
+  background: url("../../assets/images/background/bannerBackground.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -18,11 +18,13 @@
 .loader__title {
   font-size: 6vw;
   letter-spacing: -2px;
+  font-weight: 800;
 }
 
 .loader__name {
   font-size: 6vw;
   letter-spacing: -2px;
+  font-weight: 800;
 }
 
 .loader__content {
@@ -33,12 +35,12 @@
 }
 
 .loader__subtitle {
-  font-size: 10vw;
-  font-weight: 400;
+  font-size: 12vw;
+  font-weight: 800;
   letter-spacing: -2px;
   position: relative;
   padding: 0 20px;
-  color: #ba3d12;
+  color: #EA4916;
   filter: brightness(1.3);
 }
 

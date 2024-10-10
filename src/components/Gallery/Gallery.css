@@ -1,27 +1,28 @@
 .projects {
   width: 100vw;
-  background: url("../../assets/images/greylight.jpg");
-  background-color: black;
+
+  background-color: rgb(5, 5, 5);
   background-size: cover;
   background-position: center;
-  padding: 70px;
+  padding: 20px;
 }
 
 .project__info {
   width: 100%;
   border: 2px solid black;
-  background: url("../../assets/images/greylight.jpg");
+  background: url("../../assets/images/background/mainBackground.jpg");
+  background-color: rgb(250, 250, 250);
   background-position: center;
   background-size: cover;
 }
 
 .project__info h2 {
   font-size: 7vw;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: -2px;
   text-align: center;
   color: #000;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(5, 5, 5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,10 +30,10 @@
 
 .project__info h3 {
   font-size: 6vw;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: -5px;
-  border-bottom: 2px solid black;
-  color: black;
+  border-bottom: 2px solid rgb(5, 5, 5);
+  color: rgb(5, 5, 5);
   padding: 20px;
 }
 
@@ -41,8 +42,21 @@
   filter: brightness(1.3);
 }
 
+.project__livecode {
+  cursor: pointer;
+  color: #ea4916;
+  transition: color 0.3s ease;
+}
+#projects > article > div > p {
+  font-weight: 400;
+}
+.project__livecode:hover {
+  color: rgb(5, 5, 5);
+  filter: brightness(1.3);
+}
+
 .project__info p {
-  font-size: 3vw;
+  font-size: 2.7rem;
   text-align: right;
   padding: 50px;
   letter-spacing: -2px;
@@ -51,7 +65,7 @@
 
 .project__info-image {
   width: 100%;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(5, 5, 5);
   filter: saturate(0);
   transition: filter 0.3s ease;
   height: 100vh;
@@ -65,26 +79,41 @@
 .project__info-description {
   display: flex;
 }
-
+#projects > article > div > div > p {
+  font-weight: 400;
+  letter-spacing: -2px;
+}
 .project__info-text {
   width: 50%;
-  border-top: 2px solid black;
+  border-top: 2px solid rgb(5, 5, 5);
 }
 .project__info-techno {
   width: 50%;
-  border-top: 2px solid black;
-  border-left: 2px solid black;
+  border-top: 2px solid rgb(5, 5, 5);
+  border-left: 2px solid rgb(5, 5, 5);
 }
 
 .project__info-techno li {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(5, 5, 5);
   padding: 40px;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 800;
+  letter-spacing: -2px;
 }
 
 .project__info-techno p {
-  font-weight: 400;
+  font-weight: 800;
+}
+
+.next-project {
+  filter: brightness(1.3);
+  cursor: pointer;
+  color: #ea4916;
+}
+
+.next-project:hover {
+  color: rgb(5, 5, 5);
+  transition: color 0.3s ease;
 }
 
 .project__content {

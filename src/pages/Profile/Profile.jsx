@@ -2,9 +2,9 @@ import "./Profile.css";
 import Banner from "../../components/Banner/Banner";
 import Navbar from "../../components/Navbar/Navbar";
 import RecentWork from "../../components/RecentWork/RecentWork";
-import PersonalInformation from "../../components/PersonalInformation/PersonalInformation";
-import Project from "../../components/Project/Project";
-import Contact from "../../components/Contact/Contact";
+import IntroductionText from "../../components/IntroductionText/IntroductionText";
+import Gallery from "../../components/Gallery/Gallery";
+import Footer from "../../components/Footer/Footer";
 
 export default function ProfilePage() {
   return (
@@ -13,13 +13,13 @@ export default function ProfilePage() {
         <Navbar />
         <RecentWork />
         <Banner />
-        <PersonalInformation />
+        <IntroductionText />
       </section>
       <section className="profile-projects">
-        <Project />
+        <Gallery />
       </section>
       <section className="profile-contact">
-        <Contact />
+        <Footer />
       </section>
     </>
   );

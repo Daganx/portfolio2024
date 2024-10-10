@@ -1,6 +1,6 @@
 import "./RecentWork.css";
-import Project1 from "../../assets/images/project1.jpg";
-import Project2 from "../../assets/images/project3.jpg";
+import Project1 from "../../assets/images/artparis/artparis.webp";
+import Project2 from "../../assets/images/bikeshop/bikeshop.jpg";
 
 export default function RecentWork() {
   return (
@@ -8,11 +8,10 @@ export default function RecentWork() {
       <article className="work__item">
         <img src={Project1} alt="Projet 1" className="work__image" />
         <p className="work__title">
-          Project#1<span className="new-label">NEW</span>
+          PARIS.ART<span className="new-label">NEW</span>
         </p>
         <p className="work__description">
-          AvroKO is an award-winning global design firm, established itself as a
-          global leader.
+          PARIS.ART is an open vitrin to the best paintings of this agency established in Paris, capital of Culture.
         </p>
       </article>
       <article className="work__item center-text">
@@ -24,10 +23,10 @@ export default function RecentWork() {
       <article className="work__item">
         <img src={Project2} alt="Projet 2" className="work__image" />
         <p className="work__title">
-          Project#2<span className="new-label">NEW</span>
+          BIKESHOP<span className="new-label">NEW</span>
         </p>
         <p className="work__description">
-          The Roger Hub is an immersive web experience showcasing.
+          BikeShop is the shop you need if you are a passionate of biking ! 
         </p>
       </article>
     </section>

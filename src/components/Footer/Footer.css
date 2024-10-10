@@ -1,5 +1,7 @@
 .contact {
-  background-color: black;
+  background-color: rgb(5, 5, 5);
+  background-position: center;
+  background-size: cover;
   padding: 75px;
   width: 100vw;
   position: relative;
@@ -8,7 +10,7 @@
 .contact p:first-child {
   font-size: 2vw;
   letter-spacing: -2px;
-  color: white;
+  color: rgb(250, 250, 250);
 }
 
 .contact__together {
@@ -19,7 +21,8 @@
 .contact__talk {
   font-size: 10vw;
   letter-spacing: -6px;
-  color: white;
+  color: rgb(250, 250, 250);
+  font-weight: 800;
 }
 
 .contact__button ul {
@@ -29,22 +32,30 @@
 }
 
 .contact__button li {
-  font-size: 1.5vw;
+  font-size: 2rem;
   letter-spacing: -2px;
-  color: white;
+  color: rgb(250, 250, 250);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.contact__button li:hover {
+  color: #ba3d12;
+  filter: brightness(1.3);
+  transition: color 0.3s ease;
 }
 
 .contact p {
-  color: white;
+  color: rgb(250, 250, 250);
 }
 
 .contact__scroll-to-top {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #EA4916;
+  background-color: #ea4916;
   filter: brightness(1.3);
-  color: white;
+  color: rgb(250, 250, 250);
   display: flex;
   justify-content: center;
   align-items: center;
