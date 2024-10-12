@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  background: url("../../assets/images/background/mainBackground.jpg");
+  background: url("../../assets/images/background/mainBackground.webp");
   background-position: center;
   background-size: cover;
   z-index: 99;
@@ -52,6 +52,6 @@
   transition: color 0.3s ease;
 }
 .navbar__menu path:hover {
-  color: #EA4916;
+  color: #ea4916;
   filter: brightness(1.3);
 }

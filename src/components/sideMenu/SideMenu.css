@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 40vw;
+  width: 45vw;
   height: 100%;
   background-color: rgb(5, 5, 5);
   color: #fff;
@@ -20,7 +20,6 @@
   right: 0;
 }
 
-/* Style des éléments du menu */
 .side-menu ul {
   list-style: none;
   padding: 0;
@@ -47,7 +46,7 @@
 }
 
 .side-menu li:hover,
-a:hover {
+.side-menu a:hover {
   color: #ea4916;
   filter: brightness(1.3);
   letter-spacing: -8px;

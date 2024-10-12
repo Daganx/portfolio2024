@@ -1,6 +1,4 @@
 .projects {
-  width: 100vw;
-
   background-color: rgb(5, 5, 5);
   background-size: cover;
   background-position: center;
@@ -10,7 +8,7 @@
 .project__info {
   width: 100%;
   border: 2px solid black;
-  background: url("../../assets/images/background/mainBackground.jpg");
+  background: url("../../assets/images/background/mainBackground.webp");
   background-color: rgb(250, 250, 250);
   background-position: center;
   background-size: cover;
@@ -42,21 +40,12 @@
   filter: brightness(1.3);
 }
 
-.project__livecode {
-  cursor: pointer;
-  color: #ea4916;
-  transition: color 0.3s ease;
-}
 #projects > article > div > p {
-  font-weight: 400;
-}
-.project__livecode:hover {
-  color: rgb(5, 5, 5);
-  filter: brightness(1.3);
+  font-weight: 800;
 }
 
 .project__info p {
-  font-size: 2.7rem;
+  font-size: 2rem;
   text-align: right;
   padding: 50px;
   letter-spacing: -2px;
@@ -76,16 +65,33 @@
   filter: saturate(1);
 }
 
+.project__code {
+  font-size: 2rem;
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.project__code:hover {
+  color: #ea4916;
+}
+
+.project__code__container {
+  text-align: center;
+  padding: 15px;
+}
 .project__info-description {
   display: flex;
 }
 #projects > article > div > div > p {
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: -2px;
 }
 .project__info-text {
   width: 50%;
   border-top: 2px solid rgb(5, 5, 5);
+}
+.project__info-text p {
+  font-weight: 800;
 }
 .project__info-techno {
   width: 50%;

@@ -6,7 +6,6 @@ import "./SideMenu.css";
 export default function SideMenu({ menuOpen, toggleMenu, scrollToSection }) {
   const menuRef = useRef(null);
 
-  // Fermer le menu si on clique en dehors
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -31,18 +30,13 @@ export default function SideMenu({ menuOpen, toggleMenu, scrollToSection }) {
       </div>
       <ul className="side-menu__nav">
         <li>
-          {/* Lien vers le CV en PDF */}
-          <a
-            href="/CV/LETOT_Dagan_1_CV_102024.pdf" // Remplace par le chemin réel vers ton PDF
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/CV/CVDL.pdf" target="_blank" rel="noopener noreferrer">
             Daganx CV
           </a>
         </li>
         <li>
           <a
-            href="https://github.com/daganx"
+            href="/portfolio2024/CV/CVDL.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

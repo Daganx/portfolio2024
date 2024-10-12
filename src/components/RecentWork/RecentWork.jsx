@@ -1,6 +1,6 @@
 import "./RecentWork.css";
 import Project1 from "../../assets/images/artparis/artparis.webp";
-import Project2 from "../../assets/images/bikeshop/bikeshop.jpg";
+import Project2 from "../../assets/images/sportsee/sportsee.webp";
 
 export default function RecentWork() {
   return (
@@ -8,10 +8,18 @@ export default function RecentWork() {
       <article className="work__item">
         <img src={Project1} alt="Projet 1" className="work__image" />
         <p className="work__title">
-          PARIS.ART<span className="new-label">NEW</span>
+          <a
+            href="https://www.github.com/daganx/parisart"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PARIS.ART
+          </a>
+          <span className="new-label">NEW</span>
         </p>
         <p className="work__description">
-          PARIS.ART is an open vitrin to the best paintings of this agency established in Paris, capital of Culture.
+          PARIS.ART is an open vitrin to the best paintings of this agency
+          established in Paris.
         </p>
       </article>
       <article className="work__item center-text">
@@ -23,10 +31,17 @@ export default function RecentWork() {
       <article className="work__item">
         <img src={Project2} alt="Projet 2" className="work__image" />
         <p className="work__title">
-          BIKESHOP<span className="new-label">NEW</span>
+          <a
+            href="https://www.github.com/daganx/sportsee"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SPORTSEE
+          </a>
+          <span className="new-label">NEW</span>
         </p>
         <p className="work__description">
-          BikeShop is the shop you need if you are a passionate of biking ! 
+          An app to track your session and calories burned features.
         </p>
       </article>
     </section>

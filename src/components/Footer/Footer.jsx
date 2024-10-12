@@ -1,12 +1,20 @@
 import "./Footer.css";
 
 const ContactLinks = () => {
-  const links = ["Email", "LinkedIn", "Github"];
+  const links = [
+    { name: "Email", href: "mailto:dagan.letot@icloud.com" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/letotdagan/" },
+    { name: "Github", href: "https://github.com/daganx" },
+  ];
 
   return (
     <ul>
       {links.map((link, index) => (
-        <li key={index}>{link}</li>
+        <li key={index}>
+          <a href={link.href} target="_blank" rel="noopener noreferrer">
+            {link.name}
+          </a>
+        </li>
       ))}
     </ul>
   );

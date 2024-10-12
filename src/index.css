@@ -49,3 +49,34 @@
   font-family: "EditorialNew";
   color: black;
 }
+
+/* TABLET QUERIES */
+
+@media only screen and (max-width: 768px) {
+  .recent__works::before,
+  .recent__works::after {
+    content: none;
+  }
+  .recent__works {
+    flex-direction: column;
+    align-items: center;
+  }
+  .work__image {
+    height: 250px;
+  }
+  .dropcap {
+    font-size: 2rem;
+  }
+  .personal__text {
+    font-size: 2rem;
+  }
+  .project__info p {
+    font-size: 1.8rem;
+  }
+  .side-menu a {
+    font-size: 2.8rem;
+  }
+  .side-menu li {
+    font-size: 2.8rem;
+  }
+}

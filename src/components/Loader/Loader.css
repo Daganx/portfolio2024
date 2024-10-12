@@ -1,7 +1,7 @@
 .loader {
   width: 100vw;
   height: 100vh;
-  background: url("../../assets/images/background/bannerBackground.jpg");
+  background: url("../../assets/images/background/bannerBackground.webp");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -40,7 +40,7 @@
   letter-spacing: -2px;
   position: relative;
   padding: 0 20px;
-  color: #EA4916;
+  color: #ea4916;
   filter: brightness(1.3);
 }
 
