@@ -30,13 +30,17 @@ export default function SideMenu({ menuOpen, toggleMenu, scrollToSection }) {
       </div>
       <ul className="side-menu__nav">
         <li>
-          <a href="/CV/CVDL.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://drive.google.com/file/d/1YamGRtYdAqBuSCXJyFttpO938i1TJdl6/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Daganx CV
           </a>
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1YamGRtYdAqBuSCXJyFttpO938i1TJdl6/view?usp=sharing"
+            href="https://github.com/daganx"
             target="_blank"
             rel="noopener noreferrer"
           >
