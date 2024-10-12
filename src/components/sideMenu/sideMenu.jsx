@@ -36,7 +36,7 @@ export default function SideMenu({ menuOpen, toggleMenu, scrollToSection }) {
         </li>
         <li>
           <a
-            href="/CVDL.pdf"
+            href="https://drive.google.com/file/d/1YamGRtYdAqBuSCXJyFttpO938i1TJdl6/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
