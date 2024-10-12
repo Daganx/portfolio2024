@@ -36,7 +36,7 @@ export default function SideMenu({ menuOpen, toggleMenu, scrollToSection }) {
         </li>
         <li>
           <a
-            href="/portfolio2024/CV/CVDL.pdf"
+            href="/CVDL.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
