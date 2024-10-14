@@ -4,7 +4,7 @@
     "title": "PARIS.ART",
     "description": "PARIS.ART is an open vitrin to the best paintings of this agency established in Paris, capital of Culture.",
     "descriptionTechnologies": "This application was build with Vite and React. A StorePage is available to see all the paintings and works. ",
-    "technologies": ["React", "Vite", "Redux"],
+    "technologies": ["REACT", "VITE", "REDUX"],
     "image": "parisArt.webp",
     "githubLink": "https://github.com/daganx/parisart"
   },
@@ -13,7 +13,7 @@
     "title": "SPORTSEE",
     "description": "This project aims to update the user profile page to include session tracking and calories burned features.",
     "descriptionTechnologies": "A NodeJS backend is provided for handling HTTP requests and data retrieval.",
-    "technologies": ["React", "Recharts", "Node.JS"],
+    "technologies": ["REACT", "RECHARTS", "NODE.JS"],
     "image": "bikeShop.webp",
     "githubLink": "https://github.com/daganx/sportsee"
   },
@@ -21,7 +21,8 @@
     "id": 3,
     "title": "LES PETITS PLATS",
     "description": "Les Petits Plats is a website that offers a wide selection of recipes, allowing users to easily browse and sort dishes by ingredients, ustensils..",
-    "technologies": ["Javascript", "Algorithme"],
+    "descriptionTechnologies": "Project realized during my formation OC.",
+    "technologies": ["JS", "ALGO"],
     "image": "lespetitsplats2.webp",
     "githubLink": "https://github.com/daganx/les_petits_plats"
   }
