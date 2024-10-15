@@ -79,4 +79,17 @@
   .side-menu li {
     font-size: 2.8rem;
   }
+  .project-title{
+    font-size: 2.8rem;
+  }
+  .contact__button ul{
+    font-size: 1.4rem;
+    gap: 10px;
+  }
+  .contact p:first-child{
+    font-size: 1.8rem;
+  }
+  .contact{
+    padding: 60px;
+  }
 }
