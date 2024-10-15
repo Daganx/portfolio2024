@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import projectsData from "../../data/projects.json";
 import ProjectImage1 from "../../assets/images/artparis/artparis.webp";
 import ProjectImage2 from "../../assets/images/sportsee/sportsee.webp";
-import ProjectImage3 from "../../assets/images/lespetitsplats/lespetitsplats2.webp";
+import ProjectImage3 from "../../assets/images/lespetitsplats/lespetitsplats.webp";
+import ProjectImage4 from "../../assets/images/kasa/kasa.webp";
 import LeftArrow from "../../assets/images/leftarrow.png";
 import RightArrow from "../../assets/images/rightarrow.png";
 import "./Gallery.css";
@@ -11,7 +12,8 @@ import "./Gallery.css";
 const projectImages = {
   "parisArt.webp": ProjectImage1,
   "bikeShop.webp": ProjectImage2,
-  "lespetitsplats2.webp": ProjectImage3,
+  "lespetitsplats.webp": ProjectImage3,
+  "kasa.webp": ProjectImage4,
 };
 
 // Fonction pour ajouter les images aux projets depuis le fichier JSON
@@ -61,7 +63,7 @@ export default function Gallery() {
   } = projects[currentProjectIndex];
 
   return (
-    <div className="project-display">
+    <div className="project-display" id="projects">
       <h2 className="project-title">{title}</h2>
       {renderTechnologies(technologies)}
       <p className="project-description">{description}</p>

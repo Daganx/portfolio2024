@@ -22,8 +22,17 @@
     "title": "LES PETITS PLATS",
     "description": "Les Petits Plats is a website that offers a wide selection of recipes, allowing users to easily browse and sort dishes by ingredients, ustensils..",
     "descriptionTechnologies": "Project realized during my formation OC.",
-    "technologies": ["JS", "ALGO"],
-    "image": "lespetitsplats2.webp",
+    "technologies": ["JS", "ALGO", "CSS"],
+    "image": "lespetitsplats.webp",
     "githubLink": "https://github.com/daganx/les_petits_plats"
+  },
+  {
+    "id": 4,
+    "title": "KASA",
+    "description": "Kasa is a website designed to find houses to rent.",
+    "descriptionTechnologies": "Project realized during my formation OC.",
+    "technologies": ["REACT", "CRA", "CSS"],
+    "image": "kasa.webp",
+    "githubLink": "https://github.com/daganx/kasa"
   }
 ]
