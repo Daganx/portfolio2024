@@ -1,92 +1,47 @@
 import React, { useState } from "react";
-import projectsData from "../../data/projects.json";
-import ProjectImage1 from "../../assets/images/artparis/artparis.webp";
-import ProjectImage2 from "../../assets/images/sportsee/sportsee.webp";
-import ProjectImage3 from "../../assets/images/lespetitsplats/lespetitsplats.webp";
-import ProjectImage4 from "../../assets/images/kasa/kasa.webp";
-import LeftArrow from "../../assets/images/leftarrow.png";
-import RightArrow from "../../assets/images/rightarrow.png";
+import ParisArt from "../../assets/images/artparis/artparis.webp";
+import SportSee from "../../assets/images/sportsee/sportsee.webp";
+import LesPetitsPlats from "../../assets/images/lespetitsplats/lespetitsplats.webp";
+import PomodoroApp from "../../assets/images/pomodoro/pomodoro.jpg";
+import ToDoListApp from "../../assets/images/todolist/todolist.jpg";
+import Kasa from "../../assets/images/kasa/kasa.webp";
 import "./Gallery.css";
 
-// Mapper les images aux projets
-const projectImages = {
-  "parisArt.webp": ProjectImage1,
-  "bikeShop.webp": ProjectImage2,
-  "lespetitsplats.webp": ProjectImage3,
-  "kasa.webp": ProjectImage4,
-};
-
-// Fonction pour ajouter les images aux projets depuis le fichier JSON
-const enrichProjectsWithImages = (projects) => {
-  return projects.map((project) => ({
-    ...project,
-    image: projectImages[project.image],
-  }));
-};
-
-// Fonction de rendu pour les technologies d'un projet
-const renderTechnologies = (technologies) => {
-  return (
-    <ul className="technology-list">
-      {technologies.map((tech, index) => (
-        <li key={index}>/ {tech}</li>
-      ))}
-    </ul>
-  );
-};
-
 export default function Gallery() {
-  // Charger et enrichir les projets avec les images
-  const projects = enrichProjectsWithImages(projectsData);
-  // État pour suivre l'index du projet courant et gérer la visibilité du contenu
-  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
-  // Fonction pour aller au projet suivant
-  const handleNextProject = () => {
-    setCurrentProjectIndex((prevIndex) =>
-      prevIndex === projects.length - 1 ? 0 : prevIndex + 1
-    );
+  const [activeProject, setActiveProject] = useState(null); // État pour stocker le projet actif
+
+  const handleClick = (project) => {
+    setActiveProject(activeProject === project ? null : project); // Ouvre/ferme la div
   };
-  // Fonction pour aller au projet précédent
-  const handlePreviousProject = () => {
-    setCurrentProjectIndex((prevIndex) =>
-      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
-    );
-  };
-  // Récupérer les informations du projet courant
-  const {
-    title,
-    description,
-    descriptionTechnologies,
-    technologies,
-    image,
-    githubLink,
-  } = projects[currentProjectIndex];
+
+  const projectData = [
+    { src: ParisArt, title: "Paris Art", tech: "React" },
+    { src: SportSee, title: "SportSee", tech: "Node.js" },
+    { src: Kasa, title: "Kasa", tech: "React" },
+    { src: LesPetitsPlats, title: "Les Petits Plats", tech: "Node.js" },
+    { src: PomodoroApp, title: "Pomodoro-App", tech: "React" },
+    { src: ToDoListApp, title: "ToDoList-App", tech: "React / Redux" },
+  ];
 
   return (
-    <div className="project-display" id="projects">
-      <h2 className="project-title">{title}</h2>
-      {renderTechnologies(technologies)}
-      <p className="project-description">{description}</p>
-      <p className="project-description-techno">{descriptionTechnologies}</p>
-      <hr className="project-separator" />
+    <div className="gallery" id="projects">
+      <div className="gallery__container">
+        {projectData.map((project, index) => (
+          <div className="gallery__item" key={index} onClick={() => handleClick(index)}>
+            <img className="gallery__item__image" src={project.src} alt={project.title} />
+            <div className="gallery__item__overlay">
+              <p>{project.title}</p>
+              <p>{project.tech}</p>
+            </div>
 
-      <div className="project-navigation">
-        {/* Flèche précédente */}
-        <button className="arrow left-arrow" onClick={handlePreviousProject}>
-          <img src={LeftArrow} className="left-arrow-png"></img>
-        </button>
-
-        {/* Image du projet */}
-        <div className="project-image-container">
-          <a href={githubLink} target="blank">
-            <img src={image} alt={description} className="project-image" />
-          </a>
-        </div>
-
-        {/* Flèche suivante */}
-        <button className="arrow right-arrow" onClick={handleNextProject}>
-          <img src={RightArrow} className="right-arrow-png"></img>
-        </button>
+            {/* Affichage de la div supplémentaire avec classe show si le projet est actif */}
+            <div className={`gallery__item__details ${activeProject === index ? 'show' : ''}`}>
+              <h2>{project.title}</h2>
+              <p>Plus d'informations sur {project.title}.</p>
+              <button onClick={() => setActiveProject(null)}>Fermer</button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

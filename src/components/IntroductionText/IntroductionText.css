@@ -1,5 +1,5 @@
 .personal {
-  padding: 48px;
+  padding: 10%;
   position: relative;
   background: url("../../assets/images/background/mainBackground.webp");
   background-position: center;
@@ -9,8 +9,8 @@
 .personal__text {
   display: flex;
   justify-content: center;
-  font-size: 5rem;
-  letter-spacing: -3px;
+  font-size: 6rem;
+  letter-spacing: -8px;
 }
 
 .personal__text p {
@@ -22,7 +22,7 @@
 }
 
 .dropcap {
-  font-size: 8rem;
+  font-size: 10rem;
   font-family: "Canopee";
   margin-right: 10px;
   padding: 6px;

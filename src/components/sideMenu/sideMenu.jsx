@@ -47,7 +47,7 @@ export default function SideMenu({ menuOpen, toggleMenu, scrollToSection }) {
             Github
           </a>
         </li>
-        <li onClick={() => scrollToSection("projects")}>Projects</li>
+        <li onClick={() => scrollToSection("gallery")}>Projects</li>
       </ul>
     </div>
   );
