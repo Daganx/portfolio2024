@@ -31,10 +31,10 @@
 }
 
 .gallery__item__details p {
-    text-align: left;
-    font-weight: 100;
-    letter-spacing: -1px;
-    font-size: 1.3rem;
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: -1px;
+  font-size: 1.3rem;
 }
 
 .gallery__item__details button {

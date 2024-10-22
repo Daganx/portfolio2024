@@ -11,7 +11,6 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
-  // Fonction pour scroller jusqu'à une section
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {

@@ -7,7 +7,8 @@ export default function IntroductionText() {
         <span className="dropcap">I</span>
         <p>
           'm a French developer focused on clean design and effective solutions
-          for modern challenges.<br></br> Enter in my mind and check my work under :)
+          for modern challenges.<br></br> <br></br>Enter in my mind and check my
+          work under :)
         </p>
       </div>
     </div>

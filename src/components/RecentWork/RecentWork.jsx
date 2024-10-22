@@ -1,12 +1,12 @@
 import "./RecentWork.css";
-import Project1 from "../../assets/images/artparis/artparis.webp";
-import Project2 from "../../assets/images/sportsee/sportsee.webp";
+import ParisArt from "../../assets/images/artparis/artparis.webp";
+import SportSee from "../../assets/images/sportsee/sportsee.webp";
 
 export default function RecentWork() {
   return (
     <section className="recent__works">
       <article className="work__item">
-        <img src={Project1} alt="Projet 1" className="work__image" />
+        <img src={ParisArt} alt="Projet 1" className="work__image" />
         <p className="work__title">
           <a
             href="https://www.github.com/daganx/parisart"
@@ -29,7 +29,7 @@ export default function RecentWork() {
         </p>
       </article>
       <article className="work__item">
-        <img src={Project2} alt="Projet 2" className="work__image" />
+        <img src={SportSee} alt="Projet 2" className="work__image" />
         <p className="work__title">
           <a
             href="https://www.github.com/daganx/sportsee"

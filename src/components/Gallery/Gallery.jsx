@@ -11,7 +11,7 @@ export default function Gallery() {
   };
 
   return (
-    <div className="gallery" id="projects">
+    <div className="gallery" id="gallery">
       <div className="gallery__container">
         {projectData.map((project, index) => (
           <div
