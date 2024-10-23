@@ -27,4 +27,6 @@
   padding-top: 2rem;
   position: relative;
   z-index: 2;
+  font-family: "Pramid";
+  letter-spacing: 0.2em;
 }

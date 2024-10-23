@@ -36,6 +36,10 @@
   font-family: "Canterbury";
   src: url("./assets/fonts/Canterbury/Canterbury.ttf");
 }
+@font-face {
+  font-family: "Pramid";
+  src: url("./assets/fonts/Pramid/pramid-mango.otf");
+}
 
 * {
   margin: 0;
@@ -79,17 +83,17 @@
   .side-menu li {
     font-size: 2.8rem;
   }
-  .project-title{
+  .project-title {
     font-size: 2.8rem;
   }
-  .contact__button ul{
+  .contact__button ul {
     font-size: 1.4rem;
     gap: 10px;
   }
-  .contact p:first-child{
+  .contact p:first-child {
     font-size: 1.8rem;
   }
-  .contact{
+  .contact {
     padding: 60px;
   }
 }

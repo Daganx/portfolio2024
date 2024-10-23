@@ -1,7 +1,7 @@
 import ParisArt from "../assets/images/artparis/artparis.webp";
 import SportSee from "../assets/images/sportsee/sportsee.webp";
 import LesPetitsPlats from "../assets/images/lespetitsplats/lespetitsplats.webp";
-import PomodoroApp from "../assets/images/pomodoro/pomodoro.jpg";
+import PomodoroApp from "../assets/images/pomodoro/pomodoro.webp";
 import ToDoListApp from "../assets/images/todolist/todolist.jpg";
 import Kasa from "../assets/images/kasa/kasa.webp";
 
@@ -13,6 +13,14 @@ const projectData = [
       "A sleek, PHP Symfony-powered platform for our art gallery. It offers full CRUD capabilities, allowing the gallery to effortlessly publish, update, and manage its artwork collection. This user-friendly system makes it easy to showcase new paintings and maintain a stunning online gallery.",
     technologies: ["PHP", "SYMFONY"],
     link: "https://github.com/daganx/gallery__symfony",
+  },
+  {
+    src: PomodoroApp,
+    title: "Pomodoro",
+    description:
+      "A Pomodoro app designed to boost productivity by using the Pomodoro technique. It features customizable timers for work and break sessions, helping users stay focused and manage their time effectively. The simple and intuitive interface makes it easy to track progress and maintain a healthy work-life balance.",
+    technologies: ["REACT"],
+    link: "https://github.com/daganx/pomodoro-app",
   },
   {
     src: SportSee,
@@ -37,14 +45,6 @@ const projectData = [
       "A recipe search platform project that challenges you to develop an efficient search algorithm using advanced JavaScript techniques. The front-end interface is built with Bootstrap, providing a user-friendly and responsive design for searching recipes",
     technologies: ["JS", "CSS"],
     link: "https://github.com/daganx/lespetitsplats",
-  },
-  {
-    src: PomodoroApp,
-    title: "Pomodoro",
-    description:
-      "A Pomodoro app designed to boost productivity by using the Pomodoro technique. It features customizable timers for work and break sessions, helping users stay focused and manage their time effectively. The simple and intuitive interface makes it easy to track progress and maintain a healthy work-life balance.",
-    technologies: ["REACT"],
-    link: "https://github.com/daganx/pomodoro-app",
   },
   {
     src: ToDoListApp,

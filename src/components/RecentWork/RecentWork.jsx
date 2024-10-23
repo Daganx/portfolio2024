@@ -1,6 +1,6 @@
 import "./RecentWork.css";
 import ParisArt from "../../assets/images/artparis/artparis.webp";
-import SportSee from "../../assets/images/sportsee/sportsee.webp";
+import PomodoroApp from "../../assets/images/pomodoro/pomodoro.webp";
 
 export default function RecentWork() {
   return (
@@ -29,19 +29,26 @@ export default function RecentWork() {
         </p>
       </article>
       <article className="work__item">
-        <img src={SportSee} alt="Projet 2" className="work__image" />
+        <a href="https://daganx.github.io/pomodoro-app/" target="_blank">
+          <img
+            src={PomodoroApp}
+            alt="Projet 2"
+            className="work__image work__image__2"
+          />
+        </a>
         <p className="work__title">
           <a
-            href="https://www.github.com/daganx/sportsee"
+            href="https://www.github.com/daganx/pomodoro-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            SPORTSEE
+            POMODORO.APP
           </a>
           <span className="new-label">NEW</span>
         </p>
         <p className="work__description">
-          An app to track your session and calories burned features.
+          An app developed to help you manage your time and improve your
+          productivity.
         </p>
       </article>
     </section>

@@ -6,9 +6,9 @@ export default function IntroductionText() {
       <div className="personal__text">
         <span className="dropcap">I</span>
         <p>
-          'm a French developer focused on clean design and effective solutions
-          for modern challenges.<br></br> <br></br>Enter in my mind and check my
-          work under :)
+          'M A FRENCH DEVELOPER FOCUSED ON CLEAN DESIGN AND EFFECTIVE SOLUTIONS
+          FOR MODERN CHALLENGES.<br></br> <br></br>ENTER IN MY MIND AND CHECK MY
+          WORK UNDER :)
         </p>
       </div>
     </div>

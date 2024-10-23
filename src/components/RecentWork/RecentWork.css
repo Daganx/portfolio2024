@@ -54,6 +54,10 @@
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
+.work__image__2 {
+  object-position: center 20%;
+}
+
 .work__image:hover {
   filter: saturate(1);
   transform: scale(1.02);
