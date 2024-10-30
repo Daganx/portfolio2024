@@ -53,7 +53,34 @@ Ce portfolio présente mes projets de formation réalisés tout au long de mon p
     # ou
     yarn install
     ```
+
 3. **Lancer le projet**
+
+    ```bash
+    npm run dev
+    # ou
+    yarn dev
+    ```
+
+4. **Build de production**
+
+    ```bash
+    npm run build
+    # ou 
+    yarn build
+    ```
+
+5. **Visualiser le build**
+
+    ```bash
+    npm run preview
+    # ou
+    yarn preview 
+    ```
+
+### Auteur 
+
+Dagan LETOT
 
 
 
