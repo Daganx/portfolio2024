@@ -27,7 +27,7 @@ const projectData = [
     title: "SportSee",
     description:
       "A sports coaching analytics dashboard built with React, designed to provide coaches with insightful performance data through interactive charts and diagrams. The interface allows users to easily visualize key metrics, with data fetched via API integration using libraries like Recharts or D3.n",
-    technologies: ["REACT", "RECHARTS"],
+    technologies: ["REACT", "RECHARTS", "NODEJS"],
     link: "https://github.com/daganx/sportsee",
   },
   {
@@ -44,7 +44,7 @@ const projectData = [
     description:
       "A recipe search platform project that challenges you to develop an efficient search algorithm using advanced JavaScript techniques. The front-end interface is built with Bootstrap, providing a user-friendly and responsive design for searching recipes",
     technologies: ["JS", "CSS"],
-    link: "https://github.com/daganx/lespetitsplats",
+    link: "https://github.com/daganx/les_petits_plats",
   },
   {
     src: ToDoListApp,
@@ -52,6 +52,7 @@ const projectData = [
     description:
       "IN BUILDING. A TodoList app with a Node.js backend for managing CRUD operations. It allows users to easily create, update, and delete tasks, helping them stay organized. With a clean, user-friendly interface, the app provides seamless task management, while the Node.js server ensures efficient data handling and smooth performance.",
     technologies: ["REACT", "REDUX", "NODEJS"],
+    link: "https://github.com/daganx/daganx-todolist",
   },
 ];
 

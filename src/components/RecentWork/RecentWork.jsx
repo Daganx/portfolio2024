@@ -6,7 +6,9 @@ export default function RecentWork() {
   return (
     <section className="recent__works">
       <article className="work__item">
-        <img src={ParisArt} alt="Projet 1" className="work__image" />
+        <a href="https://github.com/daganx/gallery__symfony" target="_blank">
+          <img src={ParisArt} alt="Projet 1" className="work__image" />
+        </a>
         <p className="work__title">
           <a
             href="https://www.github.com/daganx/parisart"
